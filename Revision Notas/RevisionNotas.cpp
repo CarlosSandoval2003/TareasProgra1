@@ -7,7 +7,7 @@ int main()
     int Nota;
     cout << "Ingrese la nota obtenida:"  << endl;
     cin >> Nota;
-    if (Nota < 60){
+    if (Nota < 60 & Nota >= 0){
         Nota = 0;
     }
     else if (Nota >= 60 & Nota < 80){
@@ -18,6 +18,10 @@ int main()
     }
     else if (Nota >= 95 & Nota < 100){
         Nota = 3;
+    }
+    else {
+        cout << "Ingrese una nota valida";
+        return 0;
     }
     switch(Nota)
     {
