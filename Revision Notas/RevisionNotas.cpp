@@ -13,8 +13,11 @@ int main()
     else if (Nota >= 60 & Nota < 80){
         Nota = 1;
     }
-    else if (Nota >= 80){
+    else if (Nota >= 80 & Nota < 95){
         Nota = 2;
+    }
+    else if (Nota >= 95 & Nota < 100){
+        Nota = 3;
     }
     switch(Nota)
     {
@@ -27,6 +30,8 @@ int main()
     case 2:
         cout << "Has ganado la materia con una muy buena nota :)";
         break;
+    case 3:
+        cout << "FELICIDADES! Tienes una nota excelente";
     }
 
 
