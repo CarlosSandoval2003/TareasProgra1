@@ -59,13 +59,13 @@ int main()
         cout << "Has perdido " << NombreClase << " :(";
         break;
     case 1:
-        cout << "Has ganado la materia, pero necesitas mejorar :/";
+        cout << "Has ganado <<"<<NombreClase<<", pero necesitas mejorar :/";
         break;
     case 2:
-        cout << "Has ganado la materia con una muy buena nota :)";
+        cout << "Has ganado "<<NombreClase<<" con una muy buena nota :)";
         break;
     case 3:
-        cout << "FELICIDADES! Tienes una nota excelente";
+        cout << "FELICIDADES! Tienes una nota excelente en "<<NombreClase;
     }
 
 
