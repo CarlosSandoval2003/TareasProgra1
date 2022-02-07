@@ -12,9 +12,29 @@ int main()
     << "3)Proceso Administrativo"<< endl
     << "4)Calculo I"<< endl << "5)Derecho Informatico"
     << endl;
-    cout << endl << "Ingrese el numero de clase:" << endl;
+    cout << "Ingrese el numero de clase:" << endl;
     cin >> NumClase;
-
+    switch(NumClase)
+    {
+    case 1:
+        NombreClase = "Fisica I";
+        break;
+    case 2:
+        NombreClase = "Programacion I";
+        break;
+    case 3:
+        NombreClase = "Proceso Administrativo";
+        break;
+    case 4:
+        NombreClase = "Calculo I";
+        break;
+    case 5:
+        NombreClase = "Derecho Informatico";
+        break;
+    default:
+        cout << "Ingrese una opcion valida";
+        return 0;
+    }
     cout << "Ingrese la nota obtenida:"  << endl;
     cin >> Nota;
     if (Nota < 60 & Nota >= 0){
@@ -36,7 +56,7 @@ int main()
     switch(Nota)
     {
     case 0:
-        cout << "Has perdido " << NumClase << " :(";
+        cout << "Has perdido " << NombreClase << " :(";
         break;
     case 1:
         cout << "Has ganado la materia, pero necesitas mejorar :/";
