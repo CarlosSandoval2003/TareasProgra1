@@ -5,6 +5,16 @@ using namespace std;
 int main()
 {
     int Nota;
+    int NumClase;
+    string NombreClase;
+    cout << "CLASES:"<< endl << "1)Fisica I"<< endl <<
+    "2)Programacion I"<< endl
+    << "3)Proceso Administrativo"<< endl
+    << "4)Calculo I"<< endl << "5)Derecho Informatico"
+    << endl;
+    cout << endl << "Ingrese el numero de clase:" << endl;
+    cin >> NumClase;
+
     cout << "Ingrese la nota obtenida:"  << endl;
     cin >> Nota;
     if (Nota < 60 & Nota >= 0){
@@ -26,7 +36,7 @@ int main()
     switch(Nota)
     {
     case 0:
-        cout << "Has perdido la materia :(";
+        cout << "Has perdido " << NumClase << " :(";
         break;
     case 1:
         cout << "Has ganado la materia, pero necesitas mejorar :/";
