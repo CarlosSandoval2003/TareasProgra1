@@ -56,7 +56,22 @@ int main(){
         default:
             break;
     }
-
+    if (posX > 9){
+        cout << "No te salgas de los limites!" << endl;
+        posX = 9;
+    }
+    else if (posX < 0){
+        cout << "No te salgas de los limites!" << endl;
+        posX = 0;
+    }
+    if (posY > 9){
+        cout << "No te salgas de los limites!" << endl;
+        posY = 9;
+    }
+    else if (posY < 0){
+        cout << "No te salgas de los limites!" << endl;
+        posY = 0;
+    }
   drawMap(posX,posY,map);
   }
  return 0;
